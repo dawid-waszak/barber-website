@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Yaldevi");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-x:hidden;
+    background-color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: 'Yaldevi';
+    color: white;
+    
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/Bg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+    opacity: 50%;
+}
+
+.about-bg{
+    background-image: url('./assets/About.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.services-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/Barbershop.jpg');
+    background-attachment: fixed;
+    z-index: -10;
+    opacity: 10%;
+}
+
+.shopitem:hover{
+    box-shadow: 0 0 5px 5px rgba(253, 186, 116, 0.5);
+    cursor: pointer;
+}
+
+.contact-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/Barbershop.jpg');
+    background-attachment: fixed;
+    z-index: -10;
+    opacity: 10%;
+}
+
+.resize{
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+}
